@@ -114,7 +114,7 @@
       </div>
       <div class="w3-container w3-responsive" >
         <div id="travelling" class="w3-container w3-hide w3-white">
-  			<h4>Travelling</h4>
+  			<h4>Travelling and Erasmus</h4>
   			<p></p>
 		</div>
       </div>
@@ -134,19 +134,21 @@
         <div id="p1" class="w3-container w3-hide">
         	<h4> Website for the Student's Association of Faculdade de Psicologia - UL</h4>
     		<h5> <b>Platform:</b> Outsystems  |   <b>Category:</b> Work</h5>
-  			<p>Some text..</p>	
+  			<p>This project began when a friend of mine came to me asking if I was available to make a website for his student's association. I wasn't sure about it, however I accepted talking to the president of said association to see what they wanted exactly so I could estimate the time I would have to put into it. Seeing that it would be rather simple, I accepted their proposal and being a project for a friend, I agreed terms on a later full payment upon delivery of the website.</p><p> As I took a course of UI/UX as part of my Master's Degree at FCT-UNL where we developed a mockup of an app in Outsystems (platform of our choice), I decided to develop the website in that platform as well. The project went well, I kept constant communication with the president to make sure the development went according to their expectations and continuously made little changes matching his feedback. The website was rather simple, with an image carousel of their activities in the top, then a message board and event list at the bottom and tabs for their departments and groups. It also featured an administration page that was accessible through a login, which allowed the association to add/change info in the page.</p><p>The website took some time to be finished, especially because I was doing it only in my spare time as agreed with the association however, in the end, they said that the website was no longer needed and I dropped the project. They explained to me the reasoning behind it, and even though I think I deserved some kind of compensation, I decided it wasn't worth the hassle and didn't bother arguing about it.</p>	
 		</div>
 		<button onclick="expandProjectList('p2')" class="w3-button w3-light-blue w3-block w3-hover-white w3-padding-16">FlameHound</button>
         <div id="p2" class="w3-container w3-hide">
   			<h4> FlameHound - Website/app for submitting/viewing occurrencies or hazards</h4>
     		<h5> <b>Platform:</b> Google app Engine / Rest/ Jersey  |   <b>Category:</b> University Project</h5>
-  			<p>Some text..</p>	
+  			<p>As part of my academic program, I was integrated in a group of 4 other people from my course in order to enroll in a semester-long project, developing a complete platform that could eventually be used in the current context of the country. The idea was to develop an website, a mobile app and a server that would allow for users to submit a form with hazard situations, allowing for other users to visualize them in their device, rate them and comment. There would be other type of users who would belong to associations or departments which would be responsible with dealing with the submitted ocurrences, meaning that this platform would act as a middle-man between the citizents and the authorities.</p><p>Since front-end isn't really my thing, I opted right away for the back-end, so I volunteered to develop the server and ended up doing it on my own because nobody else wanted to do back-end. I developed the server using Java using Maven to import the Rest and Jersey libraries to support AJAX requests from both the website and app, working with JSON in the requests for easier parsing of data on both sides. For storage I used the readily available Google Datastore for all the user and occurrence-related info, and made an integration with Dropbox for storing the images. Looking behind, it would be better to store the images in another way, but since I had already worked with Dropbox and OAUTH on another project, it seemed like a reliable solution at the time.</p> <p>In the end we had an exhibit of the solutions where department representatives would go from booth to booth to see the solutions and ours received good feedback on the responsiveness and looks of the app and website.</p>	
 		</div>
 		<button onclick="expandProjectList('p3')" class="w3-button w3-teal w3-block w3-hover-white w3-padding-16">Sudoku Solver</button>
         <div id="p3" class="w3-container w3-hide">
         	<h4> Sudoku Solving genetic algorithm </h4>
     		<h5> <b>Platform:</b> Java  |   <b>Category:</b> Personal project</h5>
-  			<p>Some text..</p>	
+  			<p>After having my first A.I course in university, I decided to dwelve deeper into some areas that I studied in it and began this project out of the blue in a summer afternoon. I had already seen a colleague of mine making a sudoku solver using a Clingo, however I thought that it would be boring programming constraints and using pure logic to solve a sudoku, so I began thinking about other more exciting ways to get to a solution, even if it was in a slower, less optimized way, after all, this was a project that I did just for fun.</p>
+  			<p>I decided I would make an algorithm where a filled puzzle would be an individual, each 1x1 square would be a gene, composing a genetic sequence of 81 bits (1 if the square was a valid solution for that puzzle and context and 0 if it wasn't), and used a selection function where it would consider an individual with the most correct squares as the the most "fit" for reproduction. The genes would then be mixed randomly between two individuals with similar fitness scores, keeping intact correct squares and mixing up the incorrect ones. It also had a small mutation chance, allowing it to break out of deadlocks by sometimes changing random "correct" genes.</p>
+  			<p> It was a lot of fun to program it, and even though it wasn't an optimized solution, it would sometimes (randomly) come up with a solution in the easier puzzles I gave it after some generations. Sometimes I would leave it running and it would reach generations in the millions, sometimes getting close to the solution, but never reaching it. Maybe some changes to the fitness function or to the gene transmission method could be made and improve the results, but it was just a summer project that was put aside after a few weeks.</p>  	
 		</div>
 		<button onclick="expandProjectList('p4')" class="w3-button w3-light-blue w3-block w3-hover-white w3-padding-16">eSports FIFA 18 Anti-Cheat</button>
         <div id="p4" class="w3-container w3-hide">
@@ -173,21 +175,26 @@
             <td>Colégio Manuel Bernardes</td>
           </tr>
           <tr>
-            <td>2015 - Currently</td>
-            <td>Studied</td>
+            <td>2015 - 2018</td>
+            <td>Bachelor Degree in Computer Engineering</td>
             <td>Faculdade Ciências e Tecnologias - Universidade de Lisboa</td>
           </tr>
           <tr class="w3-white">
-            <td>2017</td>
+            <td>2018 - 2020</td>
+            <td>Integrated Master Degree in Computer Engineering</td>
+            <td>Faculdade Ciências e Tecnologias - Universidade de Lisboa</td>
+          </tr>
+          <tr>
+            <td>2018</td>
             <td>Semester-long project called FlameHound</td>
             <td>Faculdade Ciências e Tecnologias - Universidade de Lisboa</td>
           </tr>
-          <tr >
-            <td>2017</td>
+          <tr class="w3-white">
+            <td>2019</td>
             <td>Made a website using Outsystems</td>
             <td>Faculdade de Psicologia - Universidade de Lisboa</td>
           </tr>
-          <tr class="w3-white">
+          <tr>
             <td>2019-2020</td>
             <td>Erasmus in Poland</td>
             <td>Politechnika Wroclawska - Poland</td>
