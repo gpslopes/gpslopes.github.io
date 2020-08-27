@@ -1,0 +1,27 @@
+/*Eliminates padding, centers the thumbnail */
+
+.act_div{
+  cursor: pointer;
+}
+.act_div:hover {
+  opacity: 0.8;
+}
+
+.act_img {
+border: 3px solid white;
+}
+
+a:link
+{
+    color:#FFFFFF;
+}
+
+a:visited
+{
+    color:#FFFFFF;
+}
+
+a:hover 
+{
+    color:#FFFFFF;
+}

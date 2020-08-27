@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Gonçalo Lopes</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <body class="w3-content" style="max-width:1300px">
 
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
   <div class="w3-half w3-black w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
-      <h1>My Logo</h1>
+      <h1>Gonçalo Lopes</h1>
     </div>
     <div class="w3-padding-64">
       <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
+      <a href="#activities" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Activities</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-blue w3-padding-16">My Projects</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-light-blue w3-padding-16">Studies</a>
       <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
     </div>
   </div>
-  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px;">
     <div class="w3-padding-64 w3-center">
       <h1>About Me</h1>
       <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
@@ -31,39 +34,127 @@
   </div>
 </div>
 
-<!-- Second Grid: Work & Resume -->
+
+<div class="w3-row">
+  <div class="w3-half w3-teal w3-center" style="min-height:900px" id="activities">
+    <div class="w3-padding-64">
+      <h2>Activities</h2>
+      <p>Some things I've done.</p>
+    </div>
+
+    <div class="w3-row" style ="margin-bottom: 10px;">
+
+    	<div class="w3-half act_div" onclick = "expandActivityList('apanha')">
+   			<img src="./images/apanha_da_pera.jpg" class = "img-thumbnail" style="float: center; width: 200px; height: 200px; ">
+		</div> 
+
+     	<div class="w3-half act_div" onclick = "expandActivityList('football')">
+			<img src="./images/football.jpg" class = "img-thumbnail" style="float: center; width: 200px; height: 200px;"> 
+     	</div>
+    </div>
+
+    <div class="w3-row w3-hide-small" style ="margin-bottom: 10px">
+      <div class="w3-half act_div" onclick = "expandActivityList('fifa')">
+			<img src="./images/fifa.jpeg" class = "img-thumbnail" style="float: center; width: 200px; height: 200px;"> 
+     	</div>
+     	<div class="w3-half act_div" onclick = "expandActivityList('roadtrip')">
+			<img src="./images/roadtrip.jpg" class = "img-thumbnail" style="float: center; width: 200px; height: 200px;"> 
+     	</div>
+    </div>
+
+    <div class="w3-row w3-hide-small" style ="margin-bottom: 10px">
+      	<div class="w3-half act_div" onclick = "expandActivityList('hiking')">
+			<img src="./images/hiking.jpg" class = "img-thumbnail" style="float: center; width: 200px; height: 200px;"> 
+     	</div>
+     	<div class="w3-half act_div" onclick = "expandActivityList('travelling')">
+			<img src="./images/travelling.jpg" class = "img-thumbnail" style="float: center; width: 200px; height: 200px;"> 
+     	</div>
+     	
+    </div>
+    <p> And some more things...</p>
+  </div>
+  <div class="w3-half w3-light-blue w3-container" style="min-height:900px">
+    <div class="w3-padding-64 w3-center" id = description>
+      <h2>Description</h2>
+      <p>Know more about what I did</p>
+      <div class="w3-container w3-responsive" >
+        <div id="apanha" class="w3-container w3-hide w3-white">
+  			<h4>My first job</h4>
+  			<p>When I was 19 I decided that my laptop desperatly needed an upgrade, its NVIDIA 850M needed retirement from gaming. After picking the pieces and browsing websites I came to the conclusion that my savings just weren't enough, so I decided to work gathering fruit for a whole week. We were four friends in a poorly equipped house at Cadaval (it didn't even have matresses!), so we ended up sleeping on hardwood floor in sleeping bags and waking up at 5:30 a.m. It was a tough week, but extremely rewarding by seeing my hard work transform into a decent paycheck, in fact, it was so rewarding that I repeated the experiment the following year!</p>
+  			<p>We worked 8 hours from 7 a.m until 4 p.m and the sun was definitively the worst part of the job. Being outside in the hours of the highest temperatures doing physical labor is not easy, and made building the pc even more enjoyable, since it is there on my desk because of my hard work.</p>
+		</div>
+      </div>
+      <div class="w3-container w3-responsive" >
+        <div id="football" class="w3-container w3-hide w3-white">
+  			<h4>Sports</h4>
+  			<p>Whilst studying in middle school, I developed a big passion about football, both playing and watching it live in a stadium or on tv. To be honest, I ain't the best at it, but I can play fairly well and even pull off some tricks in a more friendly environment. While I was a kid, I played football at Odivelas Futebol Clube and then Futsal as a defender. I even played in an amateur league called "Liga All Stars" in a team formed by me and my friends, however the other teams were simply better than us so we decided to stick to 5v5 or 7v7 games between us.</p><p>
+  			Along the years I've been trying some different sports. I began playing rugby for my university team, but it wasn't really my thing. Then transitioned into tennis, where I found my second favourite sport and since it's easier to gather 1 or 3 people to play tennis than 13 to play football, whenever I'm able I try to schedule a 1v1 or a 2v2 game with friends. I'm still a rookie, but I believe that with practice I can definitively improve.</p>
+		</div>
+      </div>
+      <div class="w3-container w3-responsive" >
+        <div id="fifa" class="w3-container w3-hide w3-white">
+  			<h4>Professional FIFA</h4>
+  			<p>Since 2012 I've owned every edition of the game FIFA, sometimes even buying it the day it came out. In the game there is a gamemode called Pro Clubs where somebody can create a club and play with up to 10 other players, each occupying one position. What began as hours in the night with my friends on Skype playing this mode, some years later transitioned into something more serious when I signed up for a professional team called "Leões FC" (at the time). The team followed strict schedules for training (yes, training sessions in FIFA), enforced by our manager, ex-footballer and Portuguese International Ricardo Sousa. Initially it scared me being in such a competitive environment, not only in the official games for the Pro Clubs Portuguese League, but also within the team, since we were around 18 players in the team, only 11 could play at a time, and we had to prove our worth to be selected for the official matches. <p>
+  			Fast forward 1 year, and the league (which was amateur when I entered) is being regulated and managed by the Portuguese Federation of Football and, as you can imagine, the pressure to win everything increased drastically, since it could mean more exposure to the team in a time where professional football teams were beggining to invest in e-sports. In the end of the second season, the team was rebranded as "Leões Esports" just in time of making team t-shirts to wear in the prize-awarding ceremony at Cidade do Futebol for winning the League for the second time in a row.</p>
+  			<p>My FIFA career ended after my third season in the team, after the third consecutive championship title and the first FIFA Pro Clubs Champions League run for the team. Despite the passion I had for the game and the team, I needed to take time off in order to focus properly on my studies since I no longer had the time to spend 18 hours weekly on training. If there is a set of skills I can take away from this experience, it would be not only the ability to deal with stressful and sometimes adverse environments due to my experience playing the official games, but also the capability to set routines and make efforts in order to stand out and improve my skills and abilities.
+  			</p>
+		</div>
+      </div>
+      <div class="w3-container w3-responsive" >
+        <div id="roadtrip" class="w3-container w3-hide w3-white">
+  			<h4>Roadtripping around</h4>
+  			<p></p>
+		</div>
+      </div>
+      <div class="w3-container w3-responsive" >
+        <div id="hiking" class="w3-container w3-hide w3-white">
+  			<h4>Hiking</h4>
+  			<p></p>
+		</div>
+      </div>
+      <div class="w3-container w3-responsive" >
+        <div id="travelling" class="w3-container w3-hide w3-white">
+  			<h4>Travelling</h4>
+  			<p></p>
+		</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <div class="w3-row">
   <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
     <div class="w3-padding-64">
-      <h2>My Work</h2>
-      <p>Some of my latest projects.</p>
+      <h2>My Projects</h2>
+      <p>Some of my projects.</p>
     </div>
-    <div class="w3-row">
-      <div class="w3-half">
-        <img src="/w3images/coffee.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="/w3images/workbench.jpg" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-row w3-hide-small">
-      <div class="w3-half">
-        <img src="/w3images/workbench.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="/w3images/coffee.jpg" style="width:100%">
-      </div>
-    </div>
-
-    <div class="w3-row w3-hide-small">
-      <div class="w3-half">
-        <img src="/w3images/sound.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="/w3images/workbench.jpg" style="width:100%">
-      </div>
-    </div><br>
-    <p>Just call me awesome.</p>
+     <div class="w3-container w3-responsive">
+     	<button onclick="expandProjectList('p1')" class="w3-button w3-teal w3-block w3-hover-white w3-padding-16">Website</button>
+        <div id="p1" class="w3-container w3-hide">
+        	<h4> Website for the Student's Association of Faculdade de Psicologia - UL</h4>
+    		<h5> <b>Platform:</b> Outsystems  |   <b>Category:</b> Work</h5>
+  			<p>Some text..</p>	
+		</div>
+		<button onclick="expandProjectList('p2')" class="w3-button w3-light-blue w3-block w3-hover-white w3-padding-16">FlameHound</button>
+        <div id="p2" class="w3-container w3-hide">
+  			<h4> FlameHound - Website/app for submitting/viewing occurrencies or hazards</h4>
+    		<h5> <b>Platform:</b> Google app Engine / Rest/ Jersey  |   <b>Category:</b> University Project</h5>
+  			<p>Some text..</p>	
+		</div>
+		<button onclick="expandProjectList('p3')" class="w3-button w3-teal w3-block w3-hover-white w3-padding-16">Sudoku Solver</button>
+        <div id="p3" class="w3-container w3-hide">
+        	<h4> Sudoku Solving genetic algorithm </h4>
+    		<h5> <b>Platform:</b> Java  |   <b>Category:</b> Personal project</h5>
+  			<p>Some text..</p>	
+		</div>
+		<button onclick="expandProjectList('p4')" class="w3-button w3-light-blue w3-block w3-hover-white w3-padding-16">eSports FIFA 18 Anti-Cheat</button>
+        <div id="p4" class="w3-container w3-hide">
+        	<h4> Anti-Cheat software for the official PC Fifa Pro Clubs Portuguese League</h4>
+    		<h5> <b>Platform:</b> Java/Dropbox  |  <b>Category:</b> Personal project</h5>
+  			<p>Some text..</p>	
+		</div>
+	</div><br>
   </div>
   <div class="w3-half w3-indigo w3-container" style="min-height:800px">
     <div class="w3-padding-64 w3-center">
@@ -73,38 +164,33 @@
         <table class="w3-table">
           <tr>
             <th>Year</th>
-            <th>Title</th>
+            <th>What I did</th>
             <th>Where</th>
           </tr>
           <tr class="w3-white">
-            <td>2012-2016</td>
-            <td>The rest is history..</td>
-            <td>Lorem ipsum</td>
+            <td>2002-2015</td>
+            <td>Studied</td>
+            <td>Colégio Manuel Bernardes</td>
           </tr>
           <tr>
-            <td>2009-2012</td>
-            <td>Started my own company</td>
-            <td>My Garage</td>
+            <td>2015 - Currently</td>
+            <td>Studied</td>
+            <td>Faculdade Ciências e Tecnologias - Universidade de Lisboa</td>
           </tr>
           <tr class="w3-white">
-            <td>2008-2009</td>
-            <td>Started working for Lorem</td>
-            <td>London, UK</td>
+            <td>2017</td>
+            <td>Semester-long project called FlameHound</td>
+            <td>Faculdade Ciências e Tecnologias - Universidade de Lisboa</td>
           </tr>
-          <tr>
-            <td>2005-2008</td>
-            <td>Degree in Bachelor of Design</td>
-            <td>Harvard, USA</td>
+          <tr >
+            <td>2017</td>
+            <td>Made a website using Outsystems</td>
+            <td>Faculdade de Psicologia - Universidade de Lisboa</td>
           </tr>
           <tr class="w3-white">
-            <td>2002-2005</td>
-            <td>Degree in Bachelor of Business</td>
-            <td>RMIT University, Melbourne, Australia</td>
-          </tr>
-          <tr class="w3-hide-medium">
-            <td>2002-2005</td>
-            <td>Degree in Bachelor of Business</td>
-            <td>RMIT University, Melbourne, Australia</td>
+            <td>2019-2020</td>
+            <td>Erasmus in Poland</td>
+            <td>Politechnika Wroclawska - Poland</td>
           </tr>
         </table>
       </div>
@@ -116,42 +202,69 @@
 <div class="w3-row" id="contact">
   <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
-      <h1>Swing By</h1>
+      <h1>Contact me</h1>
     </div>
     <div class="w3-padding-64">
-      <p>..for a cup of coffee, or whatever.</p>
-      <p>Chicago, US</p>
-      <p>+00 1515151515</p>
-      <p>test@test.com</p>
+    	<h3> Contact Info </h3>
+      	<p><b>Phone number: </b> +351 960373858</p>
+      	<p><b>Email: </b> goncalopslopes@gmail.com</p>
+    </div>
+    <div class="w3-padding-64 ">
+    	<h3> My Platforms </h3>
+      	<p><b>Git: </b> <a href="https://github.com/gpslopes">https://github.com/gpslopes</a></p>
+
     </div>
   </div>
   <div class="w3-half w3-teal w3-container" style="height:700px">
     <div class="w3-padding-64 w3-padding-large">
-      <h1>Contact</h1>
-      <p class="w3-opacity">GET IN TOUCH</p>
-      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Name">
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Email">
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Message">
-        </div>
-        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
-      </form>
+     
     </div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>Bootstraps: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">min.css</a></p>
+
 </footer>
+
+<script>
+
+let lastActivity = null;
+let lastProject = null;
+
+function expandActivityList(id) {
+  if(id != lastActivity && lastActivity != null){
+  	var y = document.getElementById(lastActivity);
+  	y.className = y.className.replace(" w3-show", "");
+  }
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+
+  lastActivity = id;
+
+}
+
+function expandProjectList(id) {
+  if(id != lastProject && lastProject != null){
+  	var y = document.getElementById(lastProject);
+  	y.className = y.className.replace(" w3-show", "");
+  }
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+
+  lastProject = id;
+
+}
+</script>
 
 </body>
 </html>
