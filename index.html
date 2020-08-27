@@ -74,7 +74,7 @@
     <p> And some more things...</p>
   </div>
   <div class="w3-half w3-light-blue w3-container" style="min-height:900px">
-    <div class="w3-padding-64 w3-center" id = description>
+    <div class="w3-padding-64 w3-center" id = "description">
       <h2>Description</h2>
       <p>Know more about what I did</p>
       <div class="w3-container w3-responsive" >
@@ -246,6 +246,8 @@ function expandActivityList(id) {
   }
 
   lastActivity = id;
+
+  window.location.href = "#description";
 
 }
 
