@@ -117,6 +117,12 @@
   			<p> With this problem becoming more and more blatant, I decided to spend some afternoons trying to find a solution to the problem. My idea was to try to give the admins information about all the programs executing in the player's pc, allowing them to investigate logs that would be created during the game in case of suspicious activity in-game. So that's what I did, the program was rather simple, especially to avoid intense internet or processor usage to not influence the player's performance during the games. What the program did was record all the open processes upon execution (before entering the game) and store them in a file as plain text, in another one encrypted using AES and in another file as a recursive hash of all lines (to serve as log-integrity proof), then the program would constantly concatenate new logs every 5 minutes or everytime a new process was identified. The files would be distributed as follows: The encrypted log would be stored in the player's pc and was supposed to be uploaded by the player to a folder in the dropbox along with the hash file, meanwhile the plaintext log (with the encryption key of the encrypted file at the top) and the hash file would be uploaded automatically to another dropbox folder by the program using REST and OAUTH2 token as authentication. While the first dropbox folder would be respective and accessible by each player (and the admins could access it as well), the second one was only visible to admins and would serve as confirmation (in case of file tampering). The program would also allow for the decryption of the logs if the admin version was used.</p>
   			<p> The Anti-Cheat software was tested in some games between my club and some others that were fond of the project, however when its usage in official games was voted by all clubs, it was denied and the cheater problem continued.</p>
 		</div>
+		<button onclick="expandProjectList('p5')" class="w3-button w3-teal w3-block w3-hover-white w3-padding-16">My Thesis</button>
+        <div id="p4" class="w3-container w3-hide">
+        	<h4> GPU-based ANN algorithm over continuous input stream.</h4>
+    		<h5> <b>Platform:</b> C++  |  <b>Category:</b> Master Thesis</h5>
+  			<p>Something about my thesis...</p>
+		</div>
 	</div><br>
 	</div>
 </div>
