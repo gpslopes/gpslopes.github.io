@@ -126,7 +126,9 @@
         <div id="p5" class="w3-container w3-hide">
         	<h4> GPU-based ANN algorithm over continuous input stream.</h4>
     		<h5> <b>Platform:</b> C++  |  <b>Category:</b> Master Thesis</h5>
-  			<p>Something about my thesis...</p>
+  			<p>Being my biggest and most important ever, when it came to the time to select the topics for the Master Degree thesis, I applied only to topics in the A.I or Machine Learning area to ensure that my work would reflect my interest in said areas. My topic is based in the K-Nearest Neighbours algorithm, not the standard one, but its approximate variant, with some extra techniques like LSH and DOPH for dimensionality reduction since the main idea is to allow the program to execute in GPU over large datasets with little impact to query time over a continuous input stream.</p>
+  			<p>My program started out with FLASH (Fast LSH Algorithm for Similarity search accelerated with HPC) as a reference point since it already met most of the requirements needed for the desired implementation, adding to it the capability not only to support datasets bigger than the GPU memory, but also to handle continuous streams of data, executing the queries asynchronously to the handling of input. The program is currently achieving good results, allowing for a uninterrupted execution of queries over time, keeping an accuracy of 60-70% between the query points and the selected neighbours.</p>
+  			<p> Finally some extra functionalities were added in order to improve the quality of results, like the possibility to add query points to the base dataset using a metric to measure its relevance and save the newly improved dataset for future executions of the program.</p> 
 		</div>
 	</div><br>
 	</div>
